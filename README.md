@@ -36,9 +36,8 @@ Low level project topology:
 ![GitHub Logo](/topology/Low-level.png)
 
 
-
-
 <br>
+
 # How to use this
 
 This Ansible project contains roles that configure Cisco devices, based on information defined in host files.
