@@ -74,12 +74,3 @@ interfaces:
   # Port-Channel interfaces
   - { name: "Port-channel5", type: aggregated, description: "TO-STORAGE01-MGMT", config: [ENCAPSULATION, LAG, NOSHUTDOWN], tagged: "99"}                 
   - { name: "Port-channel6", type: aggregated, description: "TO-STORAGE01-DATA", config: [ENCAPSULATION, LAG, NOSHUTDOWN], tagged: "40"}                 
-
-
-# TEST access list structure
-access-lists:
-  - { name: "110", grant: permit, protocol: "ip", source: { ip: "10.10.110.0", wildcard: "0.0.0.255"}, destination: { host: "10.10.120.2"}, log: true }
-  - { name: "110", grant: permit, protocol: "ip", source: { ip: "10.10.120.0", wildcard: "0.0.0.255"}, destination: { host: "10.10.120.2"}, log: true }
-  - { name: "110", grant: permit, protocol: "ip", source: { ip: "10.10.99.0", wildcard: "0.0.0.255"}, destination: { host: "10.10.120.2"}, log: true }
-  - { name: "110", grant: deny, protocol: "ip", source: { ip: "10.0.0.0", wildcard: "0.255.255.255"}, destination: { ip: "10.0.0.0", wildcard: "0.255.255.255" }, log: true }
-  - { name: "110", grant: permit, protocol: "any", source: { host: "any"}, destination: { host: "any" }, log: true }
