@@ -21,9 +21,11 @@ Network equipment used:
 
 
 Network devices must have enabled SSH for this to work.
-look cisco_manual_config.txt for manual SSH configuration
+
+look <b>cisco_manual_config.txt</b> for manual SSH configuration
 
 The Ansible playbooks make it possible to configure Core Routers and Switch Stack.
+
 This makes it easy to add vlans to the Switch Stack - to validate that the configuration is up to date and to update OSPF routing.
 
 
@@ -53,7 +55,8 @@ Predefined playbooks that can be used to seperate device configurations.
 * cisco_base_interfaces.yml
 * cisco_base_routing.yml
 
-The playbook cisco_backup_configs.yml is made to gather device configurations and push it to GitHub if it changed.
+The playbook <b>cisco_backup_configs.yml</b> is made to gather device configurations and push it to GitHub if it changed.
+
 This can be created as a role and implemented in both start and ending of a playbook, to track changed configuration.
 <br>
 
